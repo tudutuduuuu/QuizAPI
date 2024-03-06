@@ -1,4 +1,4 @@
-namespace QuizAPI
+namespace QuizAPI.QuizController
 {
     public class WeatherForecast
     {

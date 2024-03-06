@@ -1,15 +1,11 @@
 ﻿#nullable disable
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Hangfire;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using QuizAPI.Models;
+using QuizAPI.QuizDataAccess.Data;
+using QuizAPI.QuizModels.Participant;
 
-namespace QuizAPI.Controllers
+namespace QuizAPI.QuizController.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -93,7 +89,7 @@ namespace QuizAPI.Controllers
             {
                 _context.Participants.Add(participant);
                 await _context.SaveChangesAsync();
-                RecurringJob.AddOrUpdate(() => Console.WriteLine("Success"),Cron.Daily);
+                RecurringJob.AddOrUpdate(() => Console.WriteLine("Success"), Cron.Daily);
             }
             else
                 participant = temp;

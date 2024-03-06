@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace QuizAPI.Models
+namespace QuizAPI.QuizModels.Participant
 {
     public class Participant
     {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace QuizAPI.Controllers
+namespace QuizAPI.QuizController.Controllers
 {
     [ApiController]
     [Route("[controller]")]

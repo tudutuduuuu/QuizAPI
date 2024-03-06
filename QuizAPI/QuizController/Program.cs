@@ -1,7 +1,7 @@
 using Hangfire;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
-using QuizAPI.Models;
+using QuizAPI.QuizDataAccess.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

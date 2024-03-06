@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using QuizAPI.QuizModels.Participant;
+using QuizAPI.QuizModels.Question;
 
-namespace QuizAPI.Models
+namespace QuizAPI.QuizDataAccess.Data
 {
     public class QuizDbContext : DbContext
     {
